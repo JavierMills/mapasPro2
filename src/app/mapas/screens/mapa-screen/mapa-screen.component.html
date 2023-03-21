@@ -1,0 +1,13 @@
+
+<app-loading *ngIf="!localizacionUsuarioLista; else mapReady"></app-loading>
+
+
+<ng-template #mapReady>
+
+    <app-map-view></app-map-view>
+    <app-boton-location></app-boton-location>
+    <app-search-bar></app-search-bar>
+    
+</ng-template>
+
+<app-logo-angular></app-logo-angular>
